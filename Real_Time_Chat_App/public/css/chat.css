@@ -1,0 +1,122 @@
+body{
+    background-color: rgb(94, 94, 245);
+}
+#header{
+    text-align: center;
+    font-size: 1.8em;
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(58, 58, 238);
+}
+#info{
+    background-color: rgb(73, 73, 238);
+    height: 93vh;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    position: relative;
+}
+#roomname,#users{
+    text-align: left;
+    margin: 10px;
+    padding: 30px;
+    
+}
+#roomname{
+    margin-top: 5px;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+#users{
+    height: 50vh;
+    overflow-y: scroll;
+    border: 3px solid rgb(133, 133, 221);
+}
+.username{
+    margin-top: 5px;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+#chatbox{
+    background-color: rgb(227, 238, 246);
+    height: 93vh;
+    position: relative;
+}
+#msgbox{
+    overflow-y: scroll;
+    height: 83vh;
+}
+.recevmsg{
+    background-color:rgb(73, 73, 238);
+    width: fit-content;
+    float: left;
+    clear: both;
+    margin: 10px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+}
+.recevmsg p{
+    margin: 2px;
+}
+.sendmsg{
+    background-color:rgb(148, 148, 230);
+    width: fit-content;
+    float: right;
+    clear: both;
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+    border-radius: 15px;
+    border-top-right-radius: 0px;
+}
+
+#msgcontrol{
+    position: absolute;
+    bottom: 0;
+    margin: 15px;
+    width: 100%;
+}
+#msgcontrol input,#msgcontrol button{
+    font-size: 1.2em;
+    padding: 10px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 5px;
+}
+#msgcontrol input{
+    width: 80%;
+}
+#msgcontrol button{
+    background-color: rgb(73, 73, 238);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.notice {
+    background-color: gray;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px;
+    clear: both;
+}
+
+#leaveroom{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color:rgb(73, 73, 238);
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: 500;
+    border: 2px solid blue;
+    border-radius: 10px;
+    cursor: pointer;
+
+
+}
