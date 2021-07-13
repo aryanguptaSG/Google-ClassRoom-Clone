@@ -1,0 +1,107 @@
+//signup as teacher
+POST  http://localhost:3001/signup/t 
+Content-Type: application/json
+
+{
+    "name":"Mayank",
+    "pass":"aryan",
+    "email":"Mayan@gmail",
+    "phone":"930",
+    "classes":[]
+}
+###
+//signup as student
+POST  http://localhost:3001/signup/s 
+Content-Type: application/json
+
+{
+    "name":"Aryan",
+    "pass":"aryan",
+    "email":"Aryan@gmail",
+    "phone":"9305937113",
+    "classes":[]
+}
+###
+//login as a teacher
+POST  http://localhost:3001/login/t
+Content-Type: application/json
+
+{
+   "pass":"aryan",
+    "email":"Mayan@gmail"
+   
+}
+###
+//login as a student
+POST  http://localhost:3001/login/s
+Content-Type: application/json
+
+{
+   "pass":"aryan",
+    "email":"Aryan@gmail"
+   
+}
+
+###
+//get user
+GET  http://localhost:3001/login/getuser
+authToken : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzU3YWZkZjc5NjMyMDY3NmU1ODRiYiIsImlhdCI6MTYyMzU1NDg0NSwiZXhwIjoxNjIzNTU0OTA1fQ.vWMiEPrMb-wQeqFLZ0O3HfzUYXR7UXj3515IltUrf5Y
+
+
+
+###
+//Create New Class
+POST  http://localhost:3001/class/create
+Content-Type: application/json
+
+{
+   "name":"Python",
+   "desc":"This is a Pyhon Class",
+   "authToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzU3OTgzNTkxZDFmMDYxMzYyM2I5NiIsImlhdCI6MTYyMzU1NDY4NCwiZXhwIjoxNjIzNTU0NzQ0fQ.ojAVeIIliuCv96HutvqiA7_Cd5xumNZi4OLxvJVIbKM"
+}
+
+###
+//Join New Class
+POST  http://localhost:3001/class/join
+Content-Type: application/json
+
+{
+   "id":"60c57a50d98300062ac41656",
+   "authToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzU3YWZkZjc5NjMyMDY3NmU1ODRiYiIsImlhdCI6MTYyMzU1NTA1MiwiZXhwIjoxNjIzNTU1MTEyfQ.a3ojCV9GL5HONPCS04ZoTcLcgS4Yq1pwCecq01ZQWfI"
+}
+
+###
+//get All Classes of teacher
+GET   http://localhost:3001/class/t
+authToken : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzU3OTgzNTkxZDFmMDYxMzYyM2I5NiIsImlhdCI6MTYyMzU1NDY4NCwiZXhwIjoxNjIzNTU0NzQ0fQ.ojAVeIIliuCv96HutvqiA7_Cd5xumNZi4OLxvJVIbKM
+
+
+###
+//get All Classes of student
+GET   http://localhost:3001/class/s
+authToken : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzU3YWZkZjc5NjMyMDY3NmU1ODRiYiIsImlhdCI6MTYyMzU1NTA1MiwiZXhwIjoxNjIzNTU1MTEyfQ.a3ojCV9GL5HONPCS04ZoTcLcgS4Yq1pwCecq01ZQWfI
+
+###
+//remove a class from student list.
+PUT   http://localhost:3001/class/leave
+Content-Type: application/json
+
+{
+   "id":"60c382f6b40db904de19383b",
+   "authToken" : ""
+}
+
+###
+//remove and delete class from Teacher list.
+PUT   http://localhost:3001/class/delete
+Content-Type: application/json
+
+{
+   "id":"60c382f6b40db904de19383b",
+   "authToken" : ""
+}
+
+###
+//get class material
+GET http://localhost:3001/material/info/60c58d82f64371099498e276
+authToken : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwYzU3OTgzNTkxZDFmMDYxMzYyM2I5NiIsImlhdCI6MTYyMzU2MDU1NSwiZXhwIjoxNjIzNjQ2OTU1fQ.fCUqjwHPLRdFENkXsXj9NnYZU0b_h-8j3K-hZyHJlfc
