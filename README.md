@@ -1,6 +1,6 @@
 # Google ClasRoom Clone.
 
-_*This Project is Clone of Google ClassRoom . Build with **MURN** techonology.*_
+_*This Project is Clone of Google ClassRoom . Build with `**MERN**` techonology.*_
 
 ---
 ## Front End 
