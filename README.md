@@ -9,12 +9,19 @@ _Fornt end is made in *`React.js`*_
 --- 
 ### Let's have a look on front end .
 1. ![First screen](./Images/1.png)
+---
 2. ![SignUp screen](./Images/2.png)
+---
 3. ![LogIn screen](./Images/3.png)
-4. ![SignUp screen](./Images/4.png)
-5. ![First screen](./Images/5.png)
-6. ![SignUp screen](./Images/6.png)
-7. ![First screen](./Images/7.png)
+---
+4. ![Class screen](./Images/4.png)
+---
+5. ![Join Class screen](./Images/5.png)
+---
+6. ![All Classes](./Images/6.png)
+---
+7. ![Class Material](./Images/7.png)
+---
 
 ---
 ## Back End 
